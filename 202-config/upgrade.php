@@ -66,7 +66,7 @@ if ($success == true) {
 	info_top(); ?>
 	
 	<h2>Success!</h2>
-	<p>Prosper202 has been upgraded! Now you can <a href="/202-login.php">log in</a>.</p>
+	<p>Prosper202 has been upgraded! Now you can <a href="/<? echo LOGIN_URI; ?>">log in</a>.</p>
 	
 	<? info_bottom();
 	

@@ -205,14 +205,14 @@ if ($success == true) {
 	info_top(); ?>
 	
 	<h2>Success!</h2>
-	<p>Prosper202 has been installed. Now you can <a href="/202-login.php">log in</a> with the <strong>username</strong> "<code><? echo $html['user_name']; ?></code>" and <strong>password</strong> "<code><? echo $html['user_pass']; ?></code>".</p>
+	<p>Prosper202 has been installed. Now you can <a href="/<? echo LOGIN_URI; ?>">log in</a> with the <strong>username</strong> "<code><? echo $html['user_name']; ?></code>" and <strong>password</strong> "<code><? echo $html['user_pass']; ?></code>".</p>
 	<dl>
 		<dt>Username</dt>
 		<dd><code><? echo $html['user_name']; ?></code></dd>
 		<dt>Password</dt>
 		<dd><code><? echo $html['user_pass']; ?></code></dd>
 		<dt>Login address</dt>
-		<dd><code><? printf('<a href="/202-login.php">%s/202-login.php</a>',$_SERVER['SERVER_NAME']); ?></code></dd>
+		<dd><code><? printf('<a href="/%s">%s/%s</a>', LOGIN_URI, $_SERVER['SERVER_NAME'], LOGIN_URI); ?></code></dd>
 	</dl>
 	<p>Were you expecting more steps? Sorry thats it!</p>
 	

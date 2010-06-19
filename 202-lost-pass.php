@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		<form method="post" action="">
 			<input type="hidden" name="token" value=""/>
 			<table class="config" cellspacing="0" cellpadding="5" style="margin: 0px auto;" >
-				<tr><td colspan="2" style="text-align: center;">Please enter your username and e-mail address.<br/>You will receive a new password via e-mail to <a href="/202-login.php">login</a> with.</td></tr>
+				<tr><td colspan="2" style="text-align: center;">Please enter your username and e-mail address.<br/>You will receive a new password via e-mail to <a href="/<? echo LOGIN_URI; ?>">login</a> with.</td></tr>
 				<tr><td/></tr>
 				 <tr>
 					<th>Username:</th>

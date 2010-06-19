@@ -1,7 +1,7 @@
 <? include_once($_SERVER['DOCUMENT_ROOT'] . '/202-config/connect.php'); 
 
 //just redirect to the login screen
-header('location: /202-login.php'); die(); 
+header('location: /' . LOGIN_URI); die(); 
 /*
 info_top(); ?>
 

@@ -58,7 +58,7 @@
 if ($success == true) { 
 	
 	_die("<div style='text-align: center'><br/>Congratulations, your password has been reset.<br/>
-		   You can now <a href=\"/202-login.php\">login</a> with your new password</div>");
+		   You can now <a href=\"/" . LOGIN_URI . "\">login</a> with your new password</div>");
  } 
  
  if ($error['user_pass_key']) {

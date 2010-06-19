@@ -1252,6 +1252,11 @@ function pcc_network_icon($ppc_network_name,$ppc_account_name) {
 		$ppc_network_icon = 'adbrite.ico';    
 	}
 	
+	//adoori
+	if (preg_match("/adoori/i", $ppc_network_name)) {
+		$ppc_network_icon = 'adoori.ico';    
+	}	
+	
 	//adTegrity
 	if ((preg_match("/adtegrity/i", $ppc_network_name)) or (preg_match("/ad tegrity/i", $ppc_network_name))) {
 		$ppc_network_icon = 'adtegrity.png';    
@@ -1263,7 +1268,8 @@ function pcc_network_icon($ppc_network_name,$ppc_account_name) {
 	}
 	
 	//adsonar
-	if ((preg_match("/adsonar/i", $ppc_network_name)) or (preg_match("/ad sonar/i", $ppc_network_name))) {
+	if ((preg_match("/adsonar/i", $ppc_network_name)) or (preg_match("/ad sonar/i", $ppc_network_name))
+	    or (preg_match("/quigo/i", $ppc_network_name))) {
 		$ppc_network_icon = 'adsonar.png';    
 	}
 	
@@ -1302,7 +1308,8 @@ function pcc_network_icon($ppc_network_name,$ppc_account_name) {
 	}
 	
 	//msn
-	if ((preg_match("/microsoft/i", $ppc_network_name)) or (preg_match("/MSN/i", $ppc_network_name))) {
+	if ((preg_match("/microsoft/i", $ppc_network_name)) or (preg_match("/MSN/i", $ppc_network_name)) 
+	    or (preg_match("/bing/i", $ppc_network_name)) or (preg_match("/adcenter/i", $ppc_network_name))  ) {
 		$ppc_network_icon = 'msn.ico';    
 	}
 	
@@ -1332,18 +1339,32 @@ function pcc_network_icon($ppc_network_name,$ppc_account_name) {
 		$ppc_network_icon = 'mediatraffic.png';    
 	}
 	
+	//mochi
+	if ((preg_match("/mochi/i", $ppc_network_name)) or (preg_match("/mochimedia/i", $ppc_network_name))
+	    or (preg_match("/mochi media/i", $ppc_network_name))) {
+		$ppc_network_icon = 'mochi.ico';    
+	}	
+	
+	//myspace
+	if ((preg_match("/myspace/i", $ppc_network_name)) or (preg_match("/my space/i", $ppc_network_name))
+	    or (preg_match("/myads/i", $ppc_network_name)) or (preg_match("/my ads/i", $ppc_network_name))) {
+		$ppc_network_icon = 'myspace.ico';    
+	}
+	
 	//social media
 	if ((preg_match("/socialmedia/i", $ppc_network_name)) or (preg_match("/social media/i", $ppc_network_name))) {
 		$ppc_network_icon = 'socialmedia.ico';    
 	}
 	
 	//zango
-	if (preg_match("/zango/i", $ppc_network_name)) {
+	if ((preg_match("/zango/i", $ppc_network_name)) or (preg_match("/leadimpact/i", $ppc_network_name))
+	     or (preg_match("/lead impact/i", $ppc_network_name))) {
 		$ppc_network_icon = 'zango.ico';    
 	} 
 	
 	//adon network
-	if ((preg_match("/adonnetwork/i", $ppc_network_name)) or (preg_match("/adon network/i", $ppc_network_name))) {
+	if ((preg_match("/adonnetwork/i", $ppc_network_name)) or (preg_match("/adon network/i", $ppc_network_name)) 
+	     or (preg_match("/Adon/i", $ppc_network_name)) or (preg_match("/ad-on/i", $ppc_network_name)) ) {
 		$ppc_network_icon = 'adonnetwork.ico';     
 	}
 	

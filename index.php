@@ -23,8 +23,8 @@ if ( !file_exists( $_SERVER['DOCUMENT_ROOT'] . '/202-config.php') ) {
 			header('location: /202-config/upgrade.php');
 			
 		} else {
-	
-			header('location: /202-login.php');
+	    require_once($_SERVER['DOCUMENT_ROOT'] . '/202-config.php');
+			header('location: /' . LOGIN_URI);
 		
 		}
 	}
